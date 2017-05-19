@@ -1,3 +1,4 @@
+#python gdb.COMPLETE_EXPRESSION = gdb.COMPLETE_SYMBOL 如果出错，需要去除注释
 python
 
 # GDB dashboard - Modular visual interface for GDB in Python.
@@ -1400,6 +1401,7 @@ set python print-stack full
 # Start ------------------------------------------------------------------------
 
 python Dashboard.start()
+dashboard -layout source !assembly stack #保留source , staack模块
 
 # ------------------------------------------------------------------------------
 # Copyright (c) 2015-2017 Andrea Cardaci <cyrus.and@gmail.com>
